@@ -4,41 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My site</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Daneli Developer</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/navMain.css">
+    <link rel="shortcut icon" href="assets/img/icono.ico" />
 </head>
 <body>
-    <header>
-        <nav>
-            <figure>
-                <img src="" alt="logo">
-            </figure>
-            <ul>
-                <li><a href="#section1">Sobre mi</a></li>
-                <li><a href="#section2">Proyectos</a></li>
-                <li><a href="#section3">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="banner">
+    <header class="header nav-site" id="section1" style="display: block">
+        <div class="header-menu" id="menu">
+            <div class="header-content container">
+                <figure class="logo">
+                        <img src="assets/img/logo.png" alt="logo" class="navbar-title"><p>aneli</p>
+                </figure>
+                <nav class="menu">
+                    <ul class="menu-items navlinks">
+                        <li class="menu-item nav-item active"><a href="#section1" class="scroll">SOBRE MI</a></li>
+                        <li class="menu-item nav-item"><a href="#section2" class="scroll">PROYECTOS</a></li>
+                        <li class="menu-item nav-item"><a href="#section3" class="scroll">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <div class = "navdropdown">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                </div>  
+            </div>
+        </div>
+         <div class="banner">
             <div backgroud="">
                 <p>Hola</p>
-                <p>Soy Daniel</p>
+                <p>Soy Daneli</p>
                 <p>Desarrollador Web</p>
                 <button type="submit">Trabajemos Juntos</button>
             </div>
-        </div>
+        </div>        
     </header>
     <main>
         <section class="iam" id="section1">
-            <p>Soy desarrollador web,
-            Sé cómo crear tu sitio web para que 
-            se ejecute en diversos dispositivos sin problemas 
-            utilizando las últimas tecnologías disponibles</p>
+            <div class="container">
+                <p>Soy desarrollador web,
+                Sé cómo crear tu sitio web para que 
+                se ejecute en diversos dispositivos sin problemas 
+                utilizando las últimas tecnologías disponibles</p>
+            </div>
         </section>
         <section class="skyls">
-
         </section>
         <section class="project" id="section2">
+            <p  class="pro">PROJECTOS</p>
             <div>Red Social: Nameless</div>
             <div>Travel Agency Guanacos</div>
             <div>Mini clon de Twitter:Myours</div>
@@ -74,6 +87,7 @@
             </ul>
         </div>
     </footer>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 </html>
