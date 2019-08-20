@@ -36,6 +36,12 @@ $all: #2ABBAE;
     -ms-background-size: cover;
     background-size: cover; 
 }
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
 
 // config
 .container{
@@ -115,16 +121,12 @@ li.menu-item a:hover{
     font-weight: bold; 
 }
 ul.menu-items li {
-	-webkit-transition: all ease 0.8s;
-	-moz-transition: all ease 0.8s;
-	transition: all ease 0.8s;
+    @include transition(all ease 0.8s);
 }
 
 ul.menu-items li a {
 	box-shadow: inset 0 0 0 0 #FFF;
-	-webkit-transition: all ease 0.8s;
-	-moz-transition: all ease 0.8s;
-    transition: all ease 0.8s;
+    @include transition(all ease 0.8s);
     position: relative;
 }
 ul.menu-items:after {
@@ -233,12 +235,125 @@ ul.menu-items li.active a:after  {
     transform: rotate(45deg) translate(-6px, -6px);
     transition-duration: 500ms;
 }
-
+//banner
 .banner{
+    padding-top: 200px;
     @include background-img();
     background-image: url("../img/banner.jpg");
     height: 500px;
 }
+.page-heading {
+    position: relative;
+}
+.banner-content{
+    width: 50%;
+    @include flexbox();
+    flex-direction: column;
+    align-items: center;
+}
+.page-header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+}
+.banner-booton{
+    align-self: center;
+    background-color: $prymary;
+    text-decoration: none;
+    z-index:2;
+    font-size: 30px;
+    padding: 5px 10px;
+    color: $secundary;
+    font-weight: bold;
+    @include transition(all ease 0.8s);
+    margin-top: 50px;
+}
+.banner-booton:hover{
+    background-color: $secundary;
+    color: $prymary;
+}
+.text-banner{
+    z-index:2;
+    font-size: 50px;
+    color: $white;
+}
+.text-banner li{
+    display: none;
+    opacity: 0.0 !important;
+}
+.text-banner-iam{
+    margin-top: 50px;
+    font-size: 70px;
+    color: $white;
+};
+
+/* Desktop only style */
+@media (max-width:1150px) {
+
+}
+
+/* Tablet only style */
+@media (min-width:767px) and (max-width:1024px) {
+    .banner{
+        padding-top: 100px;
+    }
+    .banner-content{
+        width: 75%;
+        @include flexbox();
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-banner{
+        margin-top: 5vh;
+        z-index:2;
+        color: $white;
+        font-size: 50px !important;
+    }
+    .text-banner-iam{
+        text-align: center;
+        width: 75%;
+        height: 200px;
+        margin-top: 2vh;
+        color: $white;
+    }
+    .banner-booton{  
+        margin-top: 1vh;
+    }
+}
+
+/* Mobile only style */
+@media (max-width:787px) {
+    .banner{
+        padding-top: 100px;
+        height: 90vh;
+    }
+    .banner-content{
+        width: 85%;
+        @include flexbox();
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-banner{
+        margin-top: 5vh;
+        z-index:2;
+        font-size: 30px;
+        color: $white;
+    }
+    .text-banner-iam{
+        width: 100%;
+        height: 200px;
+        margin-top: 10vh;
+        font-size: 50px;
+        color: $white;
+    };
+    .banner-booton{  
+        margin-top: 10vh;
+    }
+}
+
 .iam{
     font-family: 'Lustria';
     font-size: 26px;

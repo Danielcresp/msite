@@ -32,6 +32,14 @@ $(document).ready(function(){
 
     smoothScroll();
     mobileNav();
+        $('#iam').typeIt({
+            strings: ["Web Developer...", "Backend & Fontend!"],
+            speed: 200,
+            breakLines: false,
+            startDelay: false
+        });
+
+
 
         // // Menu Responsive
         // var select = $("#menu");
