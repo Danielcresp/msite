@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900");
 @font-face {
   font-family: BrandonText-Bold;
   src: url("../fonts/BrandonText-Bold.otf"); }
@@ -357,11 +359,80 @@ ul.menu-items li.active a:after {
   .banner-booton {
     margin-top: 10vh; } }
 .iam {
-  font-family: 'Lustria';
-  font-size: 26px; }
+  font-size: 20px;
+  font-family: 'Lustria'; }
 
+.iam-content {
+  width: 40%;
+  padding: 60px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
+
+.iam-content .iam-text {
+  font-size: 30px;
+  font-family: 'OpenSans-Light'; }
+
+.iam-content .iam-text span {
+  font-family: 'BrandonText-Bold';
+  color: #2ABBAE; }
+
+div.avatar {
+  background-image: url("../img/avatar.png");
+  /* cambia estos dos valores para definir el tamaño de tu círculo */
+  height: 200px;
+  width: 200px;
+  /* los siguientes valores son independientes del tamaño del círculo */
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 100% auto;
+  margin: 20px 0px; }
+
+/* Mobile only style */
+@media (max-width: 787px) {
+  .iam-content {
+    width: 90%;
+    padding: 60px 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; } }
+.skyls {
+  height: 300px; }
+
+.skyls-content {
+  font-family: "Titillium Web", sans-serif; }
+
+/* Mobile only style */
+@media (max-width: 787px) {
+  .skyls-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: none;
+    flex-wrap: nowrap; } }
 .pro {
   font-family: 'OpenSans-Light';
   font-size: 30px; }
+
+.project-content {
+  text-align: center;
+  background-color: #1B1E25;
+  height: 300px;
+  color: #ffffff; }
 
 /*# sourceMappingURL=styles.css.map */
