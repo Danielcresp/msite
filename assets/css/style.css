@@ -23,21 +23,6 @@
   transform: rotate(180deg);
 }
 
-.wrapper {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.c100 {
-  position: relative;
-  font-size: 160px;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  float: left;
-  margin: 0.4em;
-  background-color: #dfe8ed;
-}
 .c100 *, .c100 *:before, .c100 *:after {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
