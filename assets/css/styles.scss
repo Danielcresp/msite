@@ -621,8 +621,8 @@ div.avatar {
     background-color: $secundary;
     color: $white;
     border: 1px solid red;
-    padding-top: 30px;
-    padding-bottom: 70px;
+    padding-top: 80px;
+    padding-bottom: 140px;
 }
 .project .pro{
     padding-bottom: 30px;
@@ -649,6 +649,10 @@ div.avatar {
 }
 /* Mobile only style */
 @media (max-width:787px) {
+    .project{
+        padding-top: 50px;
+        padding-bottom: 90px;
+    }
     .project-content{
         width: 99%;
         @include flexbox();
@@ -663,4 +667,31 @@ div.avatar {
         height: 100px !important;
         border: 1px solid red;
     }
+}
+
+
+// Conectados
+.connect{
+    background-color: $prymary;
+}
+.connect-content{
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+.connect-redes {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    justify-content: center;
+    margin: 100px;
+}
+.connect-redes a{
+    text-decoration: none;
+    font-size: 25px;
+    color: $white;
+    margin-left: 40px; 
+}
+.connect-redes span{
+    border: 1px solid red;
+    padding-right: 10px; 
+
 }

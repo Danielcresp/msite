@@ -621,8 +621,8 @@ div.avatar {
   background-color: #1B1E25;
   color: #ffffff;
   border: 1px solid red;
-  padding-top: 30px;
-  padding-bottom: 70px; }
+  padding-top: 80px;
+  padding-bottom: 140px; }
 
 .project .pro {
   padding-bottom: 30px; }
@@ -658,6 +658,10 @@ div.avatar {
 
 /* Mobile only style */
 @media (max-width: 787px) {
+  .project {
+    padding-top: 50px;
+    padding-bottom: 90px; }
+
   .project-content {
     width: 99%;
     display: -webkit-box;
@@ -683,5 +687,34 @@ div.avatar {
     width: 100% !important;
     height: 100px !important;
     border: 1px solid red; } }
+.connect {
+  background-color: #2ABBAE; }
+
+.connect-content {
+  padding-top: 80px;
+  padding-bottom: 120px; }
+
+.connect-redes {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px; }
+
+.connect-redes a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  margin-left: 40px; }
+
+.connect-redes span {
+  border: 1px solid red;
+  padding-right: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
