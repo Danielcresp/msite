@@ -13,22 +13,22 @@
 </head>
 <body>
     <header class="header nav-site" id="section1" style="display: block">
-        <div class="header-menu" id="menu">
+        <div class="header-menu">
             <div class="header-content container">
                 <figure class="logo">
                         <img src="assets/img/logo.png" alt="logo" class="navbar-title"><p>aneli</p>
                 </figure>
-                <nav class="menu">
+                <nav class="menu" id="menu">
                     <ul class="menu-items navlinks">
-                        <li class="menu-item nav-item active"><a href="#section1" class="scroll">SOBRE MI</a></li>
-                        <li class="menu-item nav-item"><a href="#section2" class="scroll">PROYECTOS</a></li>
-                        <li class="menu-item nav-item"><a href="#section3" class="scroll">CONTACTO</a></li>
+                        <li class="menu-item nav-item" id="1item"><a href="#section1" class="scroll">SOBRE MI</a></li>
+                        <li class="menu-item nav-item" id="2item"><a href="#section2" class="scroll">PROYECTOS</a></li>
+                        <li class="menu-item nav-item" id="3item"><a href="#section3" class="scroll">CONTACTO</a></li>
                     </ul>
                 </nav>
                 <div class="navdropdown">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>  
             </div>
         </div>
@@ -36,7 +36,7 @@
             <div class="banner-content container">
                 <p class="text-banner">Hola Soy Daneli</p>
                 <p id="iam" class="text-banner-iam"></p>
-                <a class="banner-booton" href="#section2" style="z-index:2;">Trabajemos Juntos</a>
+                <a class="banner-booton" href="#section3" style="z-index:2;">Trabajemos Juntos</a>
                 <div class="page-header-overlay"></div>
             </div>
         </div> 
@@ -132,9 +132,9 @@
         </section>
         <section class="connect">
             <div class="connect-content container">
-                <p class="pro">ESTAR EN CONTACTO</p>
+                <p class="pro">PONERSE EN CONTACTO</p>
                 <div class="connect-redes">
-                    <a href="#" target="_blank"><span class="fas fa-envelope" ></span>E-mail</a>
+                    <a href="mailto:daniecrespin@outlook.com" target="_blank"><span class="fas fa-envelope" ></span>E-mail</a>
                     <a href="https://www.instagram.com/danelidev/" target="_blank"><span class="fab fa-instagram"></span>Instagram</a>
                     <a href="https://www.linkedin.com/in/daniel-eliseo-crespin-b4a3b4181/" target="_blank"><span class="fab fa-linkedin-in"></span>Linkedin</a>
                     <a hreF="https://twitter.com/daniecrespin"target="_blank"><span class="fab fa-twitter"></span>Twitter</a>
@@ -144,33 +144,41 @@
             </div>
         </section>
         <section class="contact" id="section3">
-            <p>Actualmente estoy disponible para trabajo
-              independiente</p>
-            <p>Si tienes un proyecto que desea comenzar
-                cree que necesita mi ayuda con algo o 
-                simplemente quiere decir hola,
-                póngase en contacto con migo
-            </p>
-            <div class="mail">
-                <form action="">
-                    <input type="text" placeholder="Tu nombre" required>
-                    <input type="email" placeholder="Tu email" required>
-                    <input type="textarea" placeholder="Tu Mensaje" required>
-                    <input type="button" value="Enviar">                    
-                </form>
+            <div class="contact-content container">
+                <div class="contact-estado">
+                    <p class="estado">ESTOY DISPONIBLE PARA TRABAJO INDEPENDIENTE</p>
+                </div>
+                <div class="contact-describe"id="section4" >
+                    <p class="describe">Si tiene un proyecto que desea comenzar
+                      y cree que necesita mi ayuda con algo o 
+                       simplemente quiere decir  "hola",
+                       póngase en contacto con migo
+                    </p>
+                    <div class="mail">
+                        <a href="mailto:cuenta@deemail.com"><span class="fas fa-envelope" ></span>Enviarme un mensaje a mi corre</a>
+                    </div>
+                   
+                </div>
+               
+                <!-- <div class="mail">
+                    <form action="#">
+                        <input type="text" placeholder="Tu nombre" required>
+                        <input type="email" placeholder="Tu email" required>
+                        <input type="textarea" placeholder="Tu Mensaje" required>
+                        <input type="button" value="Enviar">                    
+                    </form>
+                </div> -->
             </div>
         </section>
     </main>
-    <footer>
-        <div class="redes-social">
-            <ul>
-                <li><a href="https://www.instagram.com/danelidev/">Instagram</a></li>
-                <li><a href="https://twitter.com/daniecrespin">Twitter</a></li>
-                <li><a href="https://www.linkedin.com/in/daniel-eliseo-crespin-b4a3b4181/">Linkedin</a></li>
-                <li><a href="https://www.facebook.com/Danelidev-112770366749482">Facebook</a></li>
-                <li><a href="https://github.com/Danielcresp">Github</a></li>
-            </ul>
+    <footer class="footer">
+        <div class="reserve container">
+            <p>DANIEL CRESPIN © 2019 ALL RIGHTS RESERVED.</p>
+            <p>daniecrespin@outlook.com</p>
         </div>
+        
+        <span class="ir-arriba icon-arrow-up2">UP ↑</span>
+
     </footer>
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.typeit/3.0.1/typeit.min.js"></script>

@@ -52,6 +52,51 @@ $(document).ready(function(){
         //     }
         // });
 
+ 
+            $('.ir-arriba').click(function(){
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 300);
+            });
+         
+            $(window).scroll(function(){
+                if( $(this).scrollTop() > 0 ){
+                    $('.ir-arriba').slideDown(300);
+                } else {
+                    $('.ir-arriba').slideUp(300);
+                }
+            });
+        //cambiar en menu items ACTIVE
+  
+            var select1 = $("#1item");
+            var select2 = $("#2item");
+            var select3 = $("#3item");
+            var menu = $("#menu");
+            var select =$("#items");
+        
+            $(window).scroll(function() {
+              if (menu.offset().top > 15) {
+                select1.addClass("active");
+                select2.removeClass("active");
+              }
+              if(menu.offset().top > 1300){
+                select1.removeClass("active");
+                select2.addClass("active"); 
+                select3.removeClass("active");
+              }
+              if(menu.offset().top > 2000){
+                select2.removeClass("active");
+                select3.addClass("active");
+              }
+                //var barra = $(window).scrollTop();
+                var barrabo = $(window).scrollTop() - $(window).height();
+                 var posicion = barrabo * 0.18;
+        
+                $('.nav-site').css({
+                    'background-position': '0 ' + posicion + 'px'
+                });
+            });
+        
         
 });
 

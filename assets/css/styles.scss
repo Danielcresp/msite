@@ -59,7 +59,10 @@ $all: #2ABBAE;
     @include flexbox();
     @include flex-wrap(wrap);
 }
-
+html{
+    //Scroll Suave
+    scroll-behavior: smooth;
+}
 *{
     padding: 0;
     margin: 0;
@@ -622,7 +625,7 @@ div.avatar {
     color: $white;
     border: 1px solid red;
     padding-top: 80px;
-    padding-bottom: 140px;
+    padding-bottom: 110px;
 }
 .project .pro{
     padding-bottom: 30px;
@@ -691,7 +694,83 @@ div.avatar {
     margin-left: 40px; 
 }
 .connect-redes span{
-    border: 1px solid red;
     padding-right: 10px; 
 
+}
+/* Mobile only style */
+@media (max-width:787px) {
+    .connect-redes a{
+        margin-bottom: 30px; 
+    }
+    .connect-redes {
+        margin: 60px;
+    }
+    .connect-content{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+// CONTACTO
+.contact{
+    padding-top: 70px; 
+    padding-bottom: 50px; 
+    background-color: $secundary;
+    color: $white;
+}
+.contact-content{
+    @include flexbox();
+    flex-direction: column;
+    align-items: center;
+}
+.contact-estado{
+    font-family: 'OpenSans-Light';
+    font-size: 30px;
+}
+
+div.contact-describe{
+    font-size: 20px;
+    font-family: 'Lustria';
+    text-align: center;
+    margin-top: 40px;
+    width: 50%;
+    margin-bottom: 40px;
+}
+.contact-describe .mail{
+    margin-top: 60px;
+    font-size: 30px;
+}
+.contact-describe .mail a{
+    color: $prymary;
+    font-family: "BrandonText-Light";
+}
+.mail a span{
+    padding-right: 10px; 
+
+}
+// .mail form{
+//     @include flexbox();
+//     flex-direction: column;
+//     padding-bottom: 20px;
+// }
+.footer{
+    color: $white;
+    background-color: $secundary;
+}
+.reserve{
+    font-family: 'OpenSans-Light';
+    font-size: 14px;
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+}
+.ir-arriba {
+    font-family: 'OpenSans-Light';
+	display:none;
+	padding:5px;
+	background:$prymary;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
 }
