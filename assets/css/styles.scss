@@ -425,10 +425,8 @@ div.avatar {
     border-radius: 50%;
     margin: 0.3em;
     background-color: #dfe8ed;
-    border: 1px solid red;
   }
   .c100 p{
-    border: 1px solid red;
     padding-top: 160px;
     margin: 0 auto;
     font-size: 25px;
@@ -545,6 +543,12 @@ div.avatar {
     -webkit-transform: rotate(324deg);
     transform: rotate(324deg);
   }
+  .c100.p50 .bar {
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
   
   .c100:hover {
     cursor: default;
@@ -609,10 +613,8 @@ div.avatar {
     border-radius: 50%;
     margin: 0.2em;
     background-color: #dfe8ed;
-    border: 1px solid red;
   }
   .c100 p{
-    border: 1px solid red;
     padding-top: 95%;
     font-size: 20px;
   }
@@ -623,7 +625,6 @@ div.avatar {
 .project {
     background-color: $secundary;
     color: $white;
-    border: 1px solid red;
     padding-top: 80px;
     padding-bottom: 110px;
 }
@@ -638,37 +639,44 @@ div.avatar {
 .project-content{
     width: 85%;
     text-align: center;
-    border: 1px solid red;
     @include flexbox();
     justify-content: space-around;
 }
+.porfolio p{
+    font-size: 20px;
+}
 .porfolio-view{
     @include background-img();
-    background-image: url('../img/laptop.png');
     padding-left: 150px;
     width: 100px;
     height: 200px;
-    border: 1px solid red;
+}
+.porfolio-view.guanacos{
+    background-image: url('../img/pro.png');
+}
+.porfolio-view.misite{
+    background-image: url('../img/pro1.png');
+}
+.porfolio-view.sky{
+    background-image: url('../img/pro2.png');
 }
 /* Mobile only style */
 @media (max-width:787px) {
     .project{
-        padding-top: 50px;
-        padding-bottom: 90px;
+        // padding-top: 50px;
+        // padding-bottom: 90px;
     }
     .project-content{
-        width: 99%;
-        @include flexbox();
+        // width: 99%;
+        // @include flexbox();
         @include flex-wrap(wrap);
-        justify-content: space-around;
+        // justify-content: space-around;
     }
     .porfolio-view{
-        @include background-img();
-        background-image: url('../img/laptop.png');
-        padding-left: 5px;
-        width: 100% !important;
-        height: 100px !important;
-        border: 1px solid red;
+        // padding-left: 1px;
+        // width: 100% !important;
+        // height: 100px !important;
+        // border: 1px solid red;
     }
 }
 
@@ -703,7 +711,7 @@ div.avatar {
         margin-bottom: 30px; 
     }
     .connect-redes {
-        margin: 60px;
+        margin: 40px;
     }
     .connect-content{
         padding-top: 40px;
@@ -712,8 +720,8 @@ div.avatar {
 }
 // CONTACTO
 .contact{
-    padding-top: 70px; 
-    padding-bottom: 50px; 
+    padding-top:20vh; 
+    padding-bottom: 15vh; 
     background-color: $secundary;
     color: $white;
 }
@@ -747,11 +755,20 @@ div.contact-describe{
     padding-right: 10px; 
 
 }
+/* Mobile only style */
+@media (max-width:787px) {
+    .contact{
+        padding-top:5vh; 
+        padding-bottom: 1vh; 
+    }
+}
 // .mail form{
 //     @include flexbox();
 //     flex-direction: column;
 //     padding-bottom: 20px;
 // }
+
+// footer
 .footer{
     color: $white;
     background-color: $secundary;
@@ -773,4 +790,53 @@ div.contact-describe{
 	position: fixed;
 	bottom:20px;
 	right:20px;
+}
+/* Mobile only style */
+@media (max-width:787px) {
+    .contact{
+        padding-top: 70px; 
+        padding-bottom: 50px; 
+        background-color: $secundary;
+        color: $white;
+    }
+    .contact-content{
+        @include flexbox();
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-estado{
+        font-family: 'OpenSans-Light';
+        font-size: 30px;
+    }
+    
+    div.contact-describe{
+        font-size: 20px;
+        font-family: 'Lustria';
+        text-align: center;
+        margin-top: 40px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .contact-describe .mail{
+        margin-top: 60px;
+        font-size: 25px;
+    }
+    .contact-describe .mail a{
+        color: $prymary;
+        font-family: "BrandonText-Light";
+    }
+    .mail a span{
+        padding-right: 10px; 
+    
+    }
+    .footer{
+        color: $white;
+        background-color: $secundary;
+    }
+    .reserve{
+        font-family: 'OpenSans-Light';
+        font-size: 14px;
+        padding-top: 50px; 
+        padding-bottom: 50px; 
+    }
 }
