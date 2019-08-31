@@ -386,7 +386,7 @@ ul.menu-items li.active a:after {
   color: #2ABBAE; }
 
 div.avatar {
-  background-image: url("../img/avatar.png");
+  background-image: url("../img/avatar.jpg");
   /* cambia estos dos valores para definir el tamaño de tu círculo */
   height: 200px;
   width: 200px;
